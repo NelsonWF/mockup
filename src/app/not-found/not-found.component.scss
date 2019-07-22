@@ -1,0 +1,19 @@
+div.wrapper {
+	text-align: center;
+	font-size: 4rem;
+	height: calc(100vh - 130px);
+	position: relative;
+
+	div {
+		position: absolute;
+		margin: 0 auto;
+		top: calc(50% - 8rem);
+		width: 52rem;
+		left: calc(50% - 26rem);
+
+		h1,
+		h2 {
+			margin: 0;
+		}
+	}
+}

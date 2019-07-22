@@ -1,0 +1,76 @@
+.sidebar-nav {
+	max-width: 230px;
+	display: block;
+	height: 100vh;
+	background-color: #100050;
+	padding: 0 10px;
+	color: white;
+	font-size: 14px;
+	font-family: 'Courier New', Courier, monospace;
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			list-style: none;
+		}
+
+		li.logo {
+			padding: 10px 0;
+
+			img {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				margin: 0px;
+				line-height: inherit;
+				white-space: nowrap;
+			}
+		}
+
+		li {
+			h3 {
+				text-align: center;
+				padding: 10px;
+			}
+		}
+
+		li.filters {
+			div {
+				padding: 0 15px;
+				border-bottom: 1px solid white;
+
+				h3.b-bottom {
+					border-bottom: 1px solid white;
+				}
+
+				ul {
+					li {
+						padding: 10px 0;
+
+						fa-icon {
+							font-size: 2.5rem;
+							;
+						}
+
+						label.switch {
+							top: -18px;
+							left: calc(100% - 90px);
+						}
+					}
+				}
+			}
+		}
+
+		li.status {
+			div {
+				padding: 0 15px;
+			}
+
+			input.search {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+nav {
+	display: block;
+	margin-left: 250px;
+	width: calc(100% - 250px);
+	background-color: white;
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			cursor: pointer;
+			list-style: none;
+			display: inline-block;
+			padding: 10px;
+			text-align: center;
+			width: calc(calc(100% / 5) - 20px);
+			user-select: none;
+
+			fa-icon {
+				font-size: 2rem;
+			}
+
+			span {
+				display: block;
+			}
+		}
+
+		li:hover {
+			opacity: 0.8;
+		}
+
+		li:focus {
+			outline: none;
+		}
+
+		li.active {
+			color: white;
+			background-color: #fb4e01;
+		}
+
+	}
+}

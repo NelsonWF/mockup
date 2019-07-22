@@ -1,0 +1,20 @@
+div.sidebar {
+	position: fixed;
+	top: 0;
+}
+
+div.navbar-collapse {
+	position: fixed;
+	width: 100%;
+}
+
+div.content {
+	background: #cccccc65;
+	position: fixed;
+	left: 250px;
+	top: 76px;
+	overflow: auto;
+	width: calc(100% - 270px);
+	padding: 10px;
+	height: calc(100vh - 96px);
+}
