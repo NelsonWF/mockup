@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faLightbulb, faPercent, faCalendar, faHeart, faHome, faStar, faUser, faEnvelope, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb, faPercent, faCalendar, faHeart, faHome, faStar, faUser, faEnvelope, faCog, faLocationArrow, faChevronDown, faPlus, faTruck, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -32,6 +32,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 })
 export class AppModule {
 	constructor() {
-		library.add(faLightbulb, faPercent, faCalendar, faHeart, faHome, faStar, faUser, faEnvelope, faCog);
+		library.add(faLightbulb, faPercent, faCalendar, faHeart,
+			faHome, faStar, faUser, faEnvelope, faCog, faLocationArrow, faChevronDown, faPlus, faTruck, faEllipsisV);
 	}
 }
