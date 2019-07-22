@@ -3,30 +3,30 @@
 </div>
 <div class="body">
 	<table class="item">
-		<tr>
+		<tr *ngFor="let travel of travels">
 			<td class="check">[]</td>
 			<td class="list">
 				<table>
 					<tr>
 						<td class="t-20">
-							<p style="padding: 0 2rem;"> Monday 10th 2:28 PM </p>
+							<p style="padding: 0 2rem;"> {{travel.date}} </p>
 						</td>
 						<td class="t-30 middle">
 							<div class="t-20">
 								<fa-icon [icon]="['fa','location-arrow']" class="t-30 text-left"></fa-icon>
 							</div>
 							<div class="t-70">
-								<p>Houston, TX, 33619</p>
+								<p>{{travel.source}}</p>
 								<p>
 									<fa-icon [icon]="['fa','chevron-down']" class="t-50"></fa-icon>
 								</p>
-								<p>Atlanta, GA, 30123</p>
+								<p>{{travel.destination}}</p>
 							</div>
 						</td>
 						<td class="t-60 price">
 							<fa-icon [icon]="['fa','truck']"></fa-icon>
-							<h2>$250.00</h2>
-							<span class="badge">1</span>
+							<h2>{{travel.price|currency:'USD':'symbol':'3.2-2'}}</h2>
+							<span class="badge">{{travel.badge}}</span>
 							<label class="btn">
 								<fa-icon [icon]="['fa','ellipsis-v']"></fa-icon>
 							</label>
